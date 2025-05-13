@@ -11,17 +11,14 @@
             "id": "9972967eef5db11f",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "Kanban Tasks.canvas",
-                "viewState": {
-                  "x": -154.767299674607,
-                  "y": 12.385246134350666,
-                  "zoom": -1.2141248053528475
-                }
+                "file": "Projects/Tasks/TS-VGSQ5BSU aaa.md",
+                "mode": "preview",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "Kanban Tasks"
+              "icon": "lucide-file",
+              "title": "TS-VGSQ5BSU aaa"
             }
           }
         ]
@@ -145,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Configs/Tasks/Kanban Boards/To do.md",
+                "file": "Projects/Tasks/TS-VGSQ5BSU aaa.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of To do"
+              "title": "Outline of TS-VGSQ5BSU aaa"
             }
           },
           {
@@ -183,17 +180,22 @@
       "modalforms:Edit forms": false
     }
   },
-  "active": "a63d91950a8005f2",
+  "active": "9972967eef5db11f",
   "lastOpenFiles": [
-    "Welcome.md",
+    "Projects/Tasks/TS-K5YCOH3A dddd.md",
+    "Projects/Tasks/TS-KH2YP7VT ddd.md",
+    "Projects/Tasks/TS-VGSQ5BSU aaa.md",
+    "Projects/Tasks/TS-JRM1UJG7 bbb.md",
+    "Projects/Tasks/TS-K0FIWC53 ccc.md",
+    "Projects/Tasks/Untitled.md",
     "Kanban Tasks.canvas",
+    "Welcome.md",
     "Configs/Tasks",
     "K.md",
     "Configs/Tasks/Kanban Boards/To do.md",
     "Configs/Tasks/Kanban Boards/In progress.md",
     "Configs/Tasks/Kanban Boards/Done.md",
     "Configs/Tasks/Kanban Boards/Backlog.md",
-    "Projects/Tasks/TS-VGSQ5BSU aaa.md",
     "Configs/Tasks/Kanban Boards",
     "Untitled",
     "Configs",
