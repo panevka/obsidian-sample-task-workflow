@@ -1,0 +1,392 @@
+{
+  "title": "Create issue",
+  "name": "issueForm",
+  "fields": [
+    {
+      "name": "id",
+      "label": "ID",
+      "description": "Unique issue identifier",
+      "isRequired": true,
+      "input": {
+        "type": "text",
+        "hidden": true
+      }
+    },
+    {
+      "name": "event-id",
+      "label": "Event ID",
+      "description": "Unique identifier of Google Calendar Event",
+      "isRequired": false,
+      "input": {
+        "type": "text",
+        "hidden": true
+      }
+    },
+    {
+      "name": "eventUrl",
+      "label": "Event URL",
+      "description": "URL to Google Calendar Event",
+      "isRequired": false,
+      "input": {
+        "type": "text",
+        "hidden": true
+      }
+    },
+    {
+      "name": "creationDate",
+      "label": "Creation date",
+      "description": "Issue's creation date",
+      "isRequired": true,
+      "input": {
+        "type": "datetime",
+        "hidden": true
+      }
+    },
+    {
+      "name": "title",
+      "label": "Title",
+      "description": "A brief, clear summary of the issue or task.",
+      "isRequired": true,
+      "input": {
+        "type": "text",
+        "hidden": false
+      }
+    },
+    {
+      "name": "description",
+      "label": "Description",
+      "description": "Detailed information about the task, including goals, context, or requirements.",
+      "isRequired": true,
+      "input": {
+        "type": "textarea",
+        "hidden": false
+      }
+    },
+    {
+      "name": "type",
+      "label": "Issue type",
+      "description": "The kind of task (e.g., Story, Epic, Bug, Task).",
+      "isRequired": false,
+      "input": {
+        "type": "select",
+        "source": "fixed",
+        "options": [
+          {
+            "value": "initiative",
+            "label": "Initiative"
+          },
+          {
+            "value": "epic",
+            "label": "Epic"
+          },
+          {
+            "value": "story",
+            "label": "Story"
+          },
+          {
+            "value": "enhancement",
+            "label": "Enhancement"
+          },
+          {
+            "value": "impairment",
+            "label": "Impairment"
+          },
+          {
+            "value": "task",
+            "label": "Task"
+          }
+        ]
+      }
+    },
+    {
+      "name": "status",
+      "label": "Status",
+      "description": "Current progress state (e.g., Backlog, To Do, In Progress).",
+      "isRequired": false,
+      "input": {
+        "type": "select",
+        "source": "fixed",
+        "options": [
+          {
+            "value": "backlog",
+            "label": "Backlog"
+          },
+          {
+            "value": "toDo",
+            "label": "To do"
+          },
+          {
+            "value": "inProgress",
+            "label": "In progress"
+          },
+          {
+            "value": "done",
+            "label": "Done"
+          }
+        ]
+      }
+    },
+    {
+      "name": "priority",
+      "label": "Priority",
+      "description": "Importance level of the task (e.g., Low, Medium, High).",
+      "isRequired": false,
+      "input": {
+        "type": "select",
+        "source": "fixed",
+        "options": [
+          {
+            "value": "highest",
+            "label": "Highest"
+          },
+          {
+            "value": "high",
+            "label": "High"
+          },
+          {
+            "value": "medium",
+            "label": "Medium"
+          },
+          {
+            "value": "low",
+            "label": "Low"
+          },
+          {
+            "value": "lowest",
+            "label": "Lowest"
+          }
+        ]
+      }
+    },
+    {
+      "name": "points",
+      "label": "Points",
+      "description": "Estimated effort or complexity (e.g., in story points).",
+      "isRequired": false,
+      "input": {
+        "type": "slider",
+        "min": 0,
+        "max": 144
+      }
+    },
+    {
+      "name": "addToCalendar",
+      "label": "Add to calendar",
+      "description": "Makes event appear in Google Calendar",
+      "isRequired": false,
+      "input": {
+        "type": "toggle",
+        "hidden": false
+      }
+    },
+    {
+      "name": "isRecurring",
+      "label": "Recurring",
+      "description": "Whether this task repeats on a schedule (Yes/No).",
+      "isRequired": false,
+      "condition": {
+        "dependencyName": "addToCalendar",
+        "type": "boolean",
+        "value": true
+      },
+      "input": {
+        "type": "toggle",
+        "hidden": false
+      }
+    },
+    {
+      "name": "recurringConfigFrequency",
+      "label": "Recurring frequency",
+      "description": "How often the task repeats (Daily, Weekly, Monthly).",
+      "isRequired": false,
+      "condition": {
+        "dependencyName": "isRecurring",
+        "type": "boolean",
+        "value": true
+      },
+      "input": {
+        "type": "select",
+        "source": "fixed",
+        "options": [
+          {
+            "value": "DAILY",
+            "label": "Daily"
+          },
+          {
+            "value": "WEEKLY",
+            "label": "Weekly"
+          },
+          {
+            "value": "MONTHLY",
+            "label": "Monthly"
+          }
+        ]
+      }
+    },
+    {
+      "name": "recurringConfigInterval",
+      "label": "Recurring interval",
+      "description": "Time between recurring tasks (e.g., every 2 weeks).",
+      "isRequired": false,
+      "condition": {
+        "dependencyName": "isRecurring",
+        "type": "boolean",
+        "value": true
+      },
+      "input": {
+        "type": "slider",
+        "min": 1,
+        "max": 10
+      }
+    },
+    {
+      "name": "recurringConfigWeekdays",
+      "label": "Specific weekdays",
+      "description": "Select the days of the week this task should recur on.",
+      "isRequired": false,
+      "condition": {
+        "dependencyName": "isRecurring",
+        "type": "boolean",
+        "value": true
+      },
+      "input": {
+        "type": "multiselect",
+        "source": "fixed",
+        "multi_select_options": [
+          "monday",
+          "tuesday",
+          "wednesday",
+          "thursday",
+          "friday",
+          "saturday",
+          "sunday"
+        ],
+        "allowUnknownValues": false
+      }
+    },
+    {
+      "name": "dueDate",
+      "label": "Due date",
+      "description": "The deadline by which the task should be completed.",
+      "isRequired": false,
+      "input": {
+        "type": "datetime",
+        "hidden": false
+      }
+    },
+    {
+      "name": "scheduledDateStart",
+      "label": "Scheduled date start",
+      "description": "When the task is planned to start or be worked on.",
+      "isRequired": false,
+      "input": {
+        "type": "datetime",
+        "hidden": false
+      }
+    },
+    {
+      "name": "scheduledDateEnd",
+      "label": "Scheduled date end",
+      "description": "When is working on the task planned to end.",
+      "isRequired": false,
+      "input": {
+        "type": "datetime",
+        "hidden": false
+      }
+    },
+    {
+      "name": "childrenIssues",
+      "label": "Children issues",
+      "description": "Subtasks or smaller issues linked to this one.",
+      "isRequired": false,
+      "input": {
+        "type": "multiselect",
+        "source": "dataview",
+        "query": "dv.pages('\"Projects/Tasks\"').filter(p => p.file.frontmatter.id && p.file.frontmatter.title).map(p =>p.file.name)",
+        "allowUnknownValues": false
+      }
+    }
+  ],
+  "version": "1",
+  "template": {
+    "createCommand": true,
+    "parsedTemplate": [
+      {
+        "_tag": "text",
+        "value": "---\ntaskName: "
+      },
+      {
+        "_tag": "variable",
+        "value": "taskName"
+      },
+      {
+        "_tag": "text",
+        "value": "\npriority: "
+      },
+      {
+        "_tag": "variable",
+        "value": "priority"
+      },
+      {
+        "_tag": "text",
+        "value": "\nissueType: "
+      },
+      {
+        "_tag": "variable",
+        "value": "issueType"
+      },
+      {
+        "_tag": "text",
+        "value": "\npoints: "
+      },
+      {
+        "_tag": "variable",
+        "value": "points"
+      },
+      {
+        "_tag": "text",
+        "value": "\nreccuring: "
+      },
+      {
+        "_tag": "variable",
+        "value": "recurring"
+      },
+      {
+        "_tag": "text",
+        "value": "\nrecurringConfigWeekdays: "
+      },
+      {
+        "_tag": "variable",
+        "value": "recurringConfigWeekdays"
+      },
+      {
+        "_tag": "text",
+        "value": "\nrecurringConfigFrequency: "
+      },
+      {
+        "_tag": "variable",
+        "value": "recurringConfigFrequency"
+      },
+      {
+        "_tag": "text",
+        "value": "\ndueDate: "
+      },
+      {
+        "_tag": "variable",
+        "value": "dueDate"
+      },
+      {
+        "_tag": "text",
+        "value": "\nscheduledDate: "
+      },
+      {
+        "_tag": "variable",
+        "value": "scheduledDate"
+      },
+      {
+        "_tag": "text",
+        "value": "\n---"
+      }
+    ]
+  }
+}

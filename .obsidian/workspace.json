@@ -1,0 +1,207 @@
+{
+  "main": {
+    "id": "4a2cb6707155fca4",
+    "type": "split",
+    "children": [
+      {
+        "id": "0ac97230975e6a34",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9972967eef5db11f",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Kanban Tasks.canvas",
+                "viewState": {
+                  "x": -154.767299674607,
+                  "y": 12.385246134350666,
+                  "zoom": -1.2141248053528475
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "Kanban Tasks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "ed1e40cbd6d2b69f",
+    "type": "split",
+    "children": [
+      {
+        "id": "14b8a8a451e32eda",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a63d91950a8005f2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "e3792994e09ce2a1",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "78db6273b81bc382",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "cd8cf3ddc2acc8fc",
+    "type": "split",
+    "children": [
+      {
+        "id": "1870fa480f758250",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f14729b58b0f2934",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Welcome.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Welcome"
+            }
+          },
+          {
+            "id": "f38e8fdf1c4c8ca8",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Welcome.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Welcome"
+            }
+          },
+          {
+            "id": "500ac000a03fe85c",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "05df6c921fb54745",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Configs/Tasks/Kanban Boards/To do.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of To do"
+            }
+          },
+          {
+            "id": "69ecd3b613c83749",
+            "type": "leaf",
+            "state": {
+              "type": "modal-form-manage-forms-view",
+              "state": {},
+              "icon": "documents",
+              "title": "Manage forms"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 243.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "modalforms:Edit forms": false
+    }
+  },
+  "active": "a63d91950a8005f2",
+  "lastOpenFiles": [
+    "Welcome.md",
+    "Kanban Tasks.canvas",
+    "Configs/Tasks",
+    "K.md",
+    "Configs/Tasks/Kanban Boards/To do.md",
+    "Configs/Tasks/Kanban Boards/In progress.md",
+    "Configs/Tasks/Kanban Boards/Done.md",
+    "Configs/Tasks/Kanban Boards/Backlog.md",
+    "Projects/Tasks/TS-VGSQ5BSU aaa.md",
+    "Configs/Tasks/Kanban Boards",
+    "Untitled",
+    "Configs",
+    "Projects/Tasks",
+    "scripts/issueForm.json~",
+    "scripts/issueManager.ts~",
+    "scripts/utils.ts",
+    "scripts/issueForm.json",
+    "scripts/issue.types.ts"
+  ]
+}

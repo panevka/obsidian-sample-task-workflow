@@ -1,0 +1,45 @@
+{
+	"nodes":[
+		{
+			"file":"Configs/Tasks/Kanban Boards/Backlog.md",
+			"id":"70e772cafcf1bccb",
+			"styleAttributes":{},
+			"type":"file",
+			"x":-870,
+			"y":-315,
+			"width":360,
+			"height":630
+		},
+		{
+			"file":"Configs/Tasks/Kanban Boards/To do.md",
+			"id":"abd68927ba54796f",
+			"styleAttributes":{},
+			"type":"file",
+			"x":-390,
+			"y":-315,
+			"width":360,
+			"height":630
+		},
+		{
+			"file":"Configs/Tasks/Kanban Boards/In progress.md",
+			"id":"a5e61826d58dde59",
+			"styleAttributes":{},
+			"type":"file",
+			"x":50,
+			"y":-315,
+			"width":380,
+			"height":630
+		},
+		{
+			"file":"Configs/Tasks/Kanban Boards/Done.md",
+			"id":"228b85b720bddbf3",
+			"styleAttributes":{},
+			"type":"file",
+			"x":490,
+			"y":-315,
+			"width":380,
+			"height":630
+		}
+	],
+	"edges":[]
+}
